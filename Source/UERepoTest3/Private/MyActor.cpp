@@ -24,7 +24,7 @@ void AMyActor::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 	FVector location = GetActorLocation();
-	location.Y += DeltaTime * 100.0;
+	location.Z += DeltaTime * 100.0;
 	SetActorLocation(location);
 }
 
