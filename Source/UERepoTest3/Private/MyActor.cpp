@@ -22,9 +22,9 @@ void AMyActor::BeginPlay()
 void AMyActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
 	FVector location = GetActorLocation();
-	location.X += DeltaTime * 100.0;
+	location.Y += DeltaTime * 100.0;
 	SetActorLocation(location);
 }
 
